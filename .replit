@@ -1,11 +1,12 @@
 language = "python3"
 run = "python app.py"
-entrypoint = "main.py"
+entrypoint = "app.py"
 hidden = ["venv", ".config", "**/__pycache__", "**/.mypy_cache", "**/*.pyc"]
 
 [languages]
 
 [languages.python3]
+
 pattern = "**/*.py"
 
 [languages.python3.languageServer]
@@ -38,7 +39,6 @@ supportsProgressReporting = true
 supportsRunInTerminalRequest = true
 supportsVariablePaging = true
 supportsVariableType = true
-
 [debugger.interactive.launchMessage]
 command = "attach"
 type = "request"
@@ -50,7 +50,6 @@ type = "request"
 [packager]
 language = "python3"
 ignoredPackages = ["unit_tests"]
-
 [packager.features]
 enabledForHosting = false
 packageSearch = true
